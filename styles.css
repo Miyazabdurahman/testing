@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ef5800;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(45deg, #575656, #4d5350);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    animation: fadeIn 2.5s ease-out;
+}
+
+.btn {
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ff9800;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+.btn-secondary {
+    background-color: #1a73e8;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #ff9800;
+}
+
+.trending {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.trending h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.article-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.article-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article-item h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.article-item p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Button Styles */
+.btn-primary {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-decoration: none; /* Remove underline */
+}
+
+.article-item .btn-secondary {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-decoration: none; /* Remove underline */
+}
+
+.article-item .btn-secondary:hover {
+    background-color: #ff9800;
+}
